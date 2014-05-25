@@ -1,5 +1,2 @@
 news
-====
-
-news
 s
