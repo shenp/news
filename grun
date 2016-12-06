@@ -1,0 +1,12 @@
+#!/bin/bash
+# ʹÓGBK Profile
+echo -e "\033]50;SetProfile=GBK\a"
+export LANG=zh_CN.GBK
+export LC_ALL=zh_CN.GBK
+echo -ne "\033]0;"$@"\007"
+$@
+echo -ne "\033]0;"${PWD/#$HOME/~}"\007"
+echo -e "\033]50;SetProfile=Default\a"
+export LANG=zh_CN.UTF-8
+export LC_ALL=zh_CN.UTF-8
+
